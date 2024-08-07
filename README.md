@@ -1,8 +1,8 @@
 - 👋 Hi, I’m @AtharvaDalvi123
 - 👀 I’m interested in Technology and Physics
-- 🌱 I’m currently learning in 12th standard
+- 🌱 I’m currently learning in Data science
 - 💞️ I’m looking to collaborate on coding
-- 📫 How to reach me insta id:- __smooth__operator__55
+- 📫 How to reach me insta id:- __atharva.dalvi__
 - 😄 Pronouns: ...
 - ⚡ Fun fact: The universe creates what the mind expects
 
