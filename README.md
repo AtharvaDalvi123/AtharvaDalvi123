@@ -2,8 +2,7 @@
 - 👀 I’m interested in Technology and Physics
 - 🌱 I’m currently learning in Data science
 - 💞️ I’m looking to collaborate on coding
-- 📫 How to reach me insta id:- __atharva.dalvi__
-- 😄 Pronouns: ...
+- 📫 How to reach me?? - My insta id:- __atharva.dalvi__
 - ⚡ Fun fact: The universe creates what the mind expects
 
 <!---
