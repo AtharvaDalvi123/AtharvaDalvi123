@@ -2,7 +2,7 @@
 - 👀 I’m interested in Technology and Physics
 - 🌱 I’m currently learning in Data science
 - 💞️ I’m looking to collaborate on coding
-- 📫 How to reach me?? - My insta id:- _atharva.dalvi__
+- 📫 How to reach me?? - My insta id:- atharva__dalvi__17
 - ⚡ Fun fact: The universe creates what the mind expects
 
 <!---
