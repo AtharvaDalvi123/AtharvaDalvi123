@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store Product Locator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .container {
+        margin-top: 50px;
+      }
+      .product-card {
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        padding: 20px;
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mb-4">Store Product Locator</h1>
+
+      <!-- Search Bar -->
+      <div class="mb-4">
+        <input
+          type="text"
+          id="searchBar"
+          class="form-control"
+          placeholder="Enter product name..."
+        />
+      </div>
+
+      <!-- Product Details Section -->
+      <div id="productDetails" class="d-none product-card">
+        <h4 id="productName">Product Name</h4>
+        <p>
+          <strong>Location:</strong>
+          <span id="productLocation">Aisle 3, Shelf 2</span>
+        </p>
+        <p>
+          <strong>Category:</strong> <span id="productCategory">Beverages</span>
+        </p>
+        <p><strong>Quantity:</strong> <span id="productQuantity">15</span></p>
+      </div>
+
+      <!-- No Results Message -->
+      <div id="noResults" class="text-center d-none">
+        <p class="text-muted">No product found. Please try a different name.</p>
+      </div>
+    </div>
+
+    <script>
+      // Example data (replace this with API integration later)
+      const products = [
+        {
+          name: "Pracetamol",
+          location: "Aisle 1, Shelf 3",
+          category: "Medicine",
+          quantity: 10,
+        },
+        {
+          name: "Tooth Brush",
+          location: "Aisle 5, Shelf 1",
+          category: "Body Cleaning",
+          quantity: 25,
+        },
+        {
+          name: "Oats",
+          location: "Aisle 2, Shelf 4",
+          category: "Breakfast",
+          quantity: 8,
+        },
+      ];
+
+      const searchBar = document.getElementById("searchBar");
+      const productDetails = document.getElementById("productDetails");
+      const noResults = document.getElementById("noResults");
+
+      searchBar.addEventListener("input", () => {
+        const query = searchBar.value.toLowerCase();
+        const product = products.find((p) =>
+          p.name.toLowerCase().includes(query)
+        );
+
+        if (product) {
+          document.getElementById("productName").textContent = product.name;
+          document.getElementById("productLocation").textContent =
+            product.location;
+          document.getElementById("productCategory").textContent =
+            product.category;
+          document.getElementById("productQuantity").textContent =
+            product.quantity;
+
+          productDetails.classList.remove("d-none");
+          noResults.classList.add("d-none");
+        } else {
+          productDetails.classList.add("d-none");
+          noResults.classList.remove("d-none");
+        }
+      });
+    </script>
+  </body>
+</html>
